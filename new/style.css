@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+/* html , body {
+   overflow-x: hidden; 
+}*/ 
+body {
+  background-color: #5aff80;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+nav {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 11;
+}
+button > svg {
+  margin-bottom: 4px;
+}
+.description {
+  position: absolute;
+  z-index: 10;
+  padding: 150px;
+  color: #000;
+  letter-spacing: 2px;
+}
+.description > h1 {
+  font-family: "Shippori Mincho", serif;
+  font-size: 4rem;
+}
+.description > p {
+  font-family: "Chivo", sans-serif;
+}
+.image-background {
+  position: absolute;
+  z-index: -10 !important;
+  right: 0;
+  top: -120px;
+  width: 70vw;
+
+  transform: translateX(8%);
+}
+/* .container{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+} */
+
+.main-container {
+  height: 100vh !important;
+  overflow: hidden;
+  width: 100vw;
+}
+      /*           BUTTON HIRE ME           */
+.button-hm{
+  position: relative;
+  width: 230px !important;
+  z-index: 2;
+}
+.button-hm::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: black;
+  transition: all .4s ease-out 0s;
+}
+.button-hm:hover::after{
+  width: 100%;
+}
+.button-hm:hover{
+  color: white;
+}
